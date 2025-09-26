@@ -1,0 +1,12 @@
+services:
+  postgres:
+    image: postgres:13.3
+    container_name: now
+    ports:
+      - "5488:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: masterkey
+      POSTGRES_DB: service-a
+
+
